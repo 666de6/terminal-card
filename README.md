@@ -1,9 +1,11 @@
 # Terminal Card
 
-## Install globally 
+## Install 
 ```bash
-cd terminal-card
+# install dependencies
+npm install 
 
+# Install globally 
 npm install -g .
 ```
 
