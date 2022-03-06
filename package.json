@@ -1,0 +1,20 @@
+{
+  "name": "terminal-card",
+  "version": "1.0.0",
+  "description": "a terminal flashcard",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ada J",
+  "license": "MIT",
+  "bin": {
+    "terminal-card": "bin/index.js"
+  },
+  "dependencies": {
+    "boxen": "4.0",
+    "chalk": "2.4",
+    "inquirer": "^8.2.0",
+    "yargs": "^17.3.1"
+  }
+}
