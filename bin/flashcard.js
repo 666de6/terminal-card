@@ -58,8 +58,8 @@ function playFlashcard(termsArray){
       playFlashcard(termsArray);
     }else{
       console.log(chalk.yellow("GAME IS OVER!"));
-      console.log(chalk.bgGreen.gray("Correct answer: " + correctAnswer));
-      console.log(chalk.bgYellow.gray("Incorrect answer: " + incorrectAnswer));
+      console.log(chalk.bgGreen.white("Correct answer: " + correctAnswer));
+      console.log(chalk.bgYellow.white("Incorrect answer: " + incorrectAnswer));
       setDivideLine();
       if(correctAnswer === termsLen){
         console.log(chalk.green(`
@@ -67,14 +67,18 @@ function playFlashcard(termsArray){
         🎉🎉🎉🎉🎉🎉 BRAVO! 🎉🎉🎉🎉🎉🎉
         🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
         🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉`));
-      }
-      if(incorrectAnswer === termsLen){
+      }else if(correctAnswer <= termsLen/2){
         console.log(chalk.red(`
         😮😮😮😮😮😮😮😮😮😮😮😮😮😮😮😮
         😮😮😮 KEEP PRACTICING! 😮😮😮😮
         😮😮😮😮😮😮😮😮😮😮😮😮😮😮😮😮
         😮😮😮😮😮😮😮😮😮😮😮😮😮😮😮😮`));
-
+      }else{
+        console.log(chalk.yellow(`
+        🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙
+        💪💪 PRACTICE MAKES PERFECT!💪💪
+        🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙
+        🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙🤙`)); 
       }
       inquirer.prompt([
         {
@@ -91,7 +95,7 @@ function playFlashcard(termsArray){
             chooseGame();
         } else {
             // Exit the game
-            console.log('See ya next time!');
+            console.log('See you next time ~');
         }
       })
     }
