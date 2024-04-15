@@ -5,7 +5,7 @@
 # install dependencies
 npm install 
 
-# Install globally 
+# Install terminal-card globally 
 npm install -g .
 ```
 
