@@ -73,9 +73,9 @@ function chooseGame(){
       }
       playFlashcard(termsArray);
     }else if(answers.Menu === '- Others -'){
-      console.log(chalk.yellow("I am thinking~ 😬😬😬"));
+      console.log(chalk.yellow("Still thinking~ 😬😬😬"));
     }else{
-      console.log(chalk.red("There is something wrong...Try it again!"));
+      console.log(chalk.red("There is something wrong... Please try it again!"));
       return;
     }
   })

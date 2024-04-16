@@ -1,4 +1,5 @@
 # Terminal Card
+This is a programmer-friendly flashcard. Currently there are only very basic functions. You can play around with it in the terminal. 
 
 ## Install 
 ```bash
@@ -23,3 +24,6 @@ terminal-card --game
 ```bash
 npm uninstall -g terminal-card
 ```
+
+## preview
+[terminal-card preview](https://ada-tech-blog.netlify.app/projectTemplate?ct=project&tab=fun-project&id=22)
